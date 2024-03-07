@@ -37,6 +37,17 @@ void display() {  //prosedur untuk menampilkan hasil
 	}
 	cout << endl;							//output baris kosong
 }
+void bubbleSortArayy() {					//prosedur untuk mengurutkan array dengan denagn metode bubble sort
+	for (int pass = 1; pass < n; pass++) {	//looping dengan i dimulai dari 0 hingga n-1
+		for (int j = 0; j < n - 1; j++) {	/// Looping dengan j dimulai dari 0 hingga n-pass-1
+			if (a[j] > a[j + 1]) {			// Jika elemen ke-j lebih besar dari elemen ke-(j+1)
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+	}
+}
 
 int main() {
 
