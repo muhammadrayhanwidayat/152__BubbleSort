@@ -50,5 +50,8 @@ void bubbleSortArayy() {					//prosedur untuk mengurutkan array dengan denagn me
 }
 
 int main() {
-
+	input();								// Memanggil fungsi input untuk mengisi nilai array a
+	bubbleSortArayy();						// Memanggil fungsi bubbleSortArray untuk mengurutkan array a
+	display();								// Memanggil fungsi display untuk menampilkan isi array a yang sudah diurutkan
+	return 0;
 }
